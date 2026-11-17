@@ -4,7 +4,6 @@
     font-weight: 400;
     font-style: normal;
 }
-
 @font-face {
     font-family: "Montserrat";
     src: url("fontes/Montserrat/static/Montserrat-Bold.ttf") format("truetype");
@@ -34,7 +33,7 @@ h1 {
 }
 
 nav {
-    padding: 2vh 3vw ;
+    padding: 2vh 10vw ;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -54,5 +53,48 @@ a {
 #menu {
     display: flex;
     gap: 3vw;
-    margin-top: 5px;
+}
+
+#hero {
+    color: #f7f5ed;
+    background-image: url("img/hero.png");
+    aspect-ratio: auto 2048 / 768; /* Por proporção da imagem final, para que o div ocupe todo o espaço e tenha o tamanho da imagem */
+    padding: 0 10vw;
+}
+#hero div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2vh;
+    height: 100%;
+    width: 25vw;
+}
+#hero h1 {
+    font-size: 3em;
+}
+#hero p {
+    font-size: 1.5em;
+}
+.btn {
+    display: inline-flex;
+    background-color: #3E6B3A75;
+    padding: 15px 40px;
+    width: 80%;
+    color: #f7f5ed;
+
+    justify-content: center;
+    align-items: center;
+
+    border-style: solid;
+    border-radius: 100px;
+    border-width: 1px;
+    border-color: #f7f5ed;
+}
+#roteiro {
+    margin-top: 5vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2vh;
 }
