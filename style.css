@@ -104,7 +104,7 @@ a {
 }
 
 
-@media (max-width: 1200px) {
+@media (max-width: 1200px) and (min-width: 800px) {
     #hero h1,
     h1 {
         font-size: 26px;
@@ -112,5 +112,16 @@ a {
     #hero p,
     p, a {
         font-size: 12px;
+    }
+}
+
+@media (max-width: 800px) {
+        #hero h1,
+    h1 {
+        font-size: 16px;
+    }
+    #hero p,
+    p, a {
+        font-size: 10px;
     }
 }
