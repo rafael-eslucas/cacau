@@ -1,0 +1,66 @@
+@font-face {
+    font-family: "Montserrat";
+    src: url("fontes/Montserrat/static/Montserrat-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url("fontes/Montserrat/static/Montserrat-Bold.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Playfair Display";
+    src: url("fontes/Playfair_Display/static/PlayfairDisplay-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+body
+{
+    font-family: "Montserrat", sans-serif;
+}
+
+h1
+{
+    font-family: "Playfair Display", serif;
+}
+
+*
+{
+    margin: 0px;
+    padding: 0px;
+    
+}
+body
+{
+    background-color: #f7f5ed;
+
+}
+nav
+{
+    padding: 4vh 3vw ;
+    background-color: #3e6b3a;
+    display: flex;
+    justify-content: space-between;
+   
+}
+.menu
+{
+    display: flex;
+    gap: 3vw;
+    margin-top: 5px;
+}
+
+p
+{
+    font-size: 25px;
+    color: #6b3e1f;
+}
+a
+{
+    text-decoration: none;
+}
