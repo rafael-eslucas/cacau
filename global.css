@@ -1,0 +1,214 @@
+@font-face {
+    font-family: "Montserrat";
+    src: url("fontes/Montserrat/static/Montserrat-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Montserrat";
+    src: url("fontes/Montserrat/static/Montserrat-Bold.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Playfair Display";
+    src: url("fontes/Playfair_Display/static/PlayfairDisplay-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+html {
+    scroll-behavior: smooth
+}
+
+* {
+    font-family: "Montserrat", sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: #f7f5ed;
+}
+
+h1 {
+    font-family: "Playfair Display", serif;
+}
+
+p {
+    font-size: 16px;
+}
+
+a {
+    color: #6b3e1f;
+    text-decoration: none;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+.column {
+    display: flex;
+    flex-direction: column;
+}
+.gap
+{
+    
+    gap: 20px;
+}
+
+@media (max-width: 1920px) and (min-width: 800px) {
+
+    h1 {
+        font-size: 26px;
+    }
+   
+    p, a {
+        font-size: 16px;
+    }
+    
+}
+
+@media (max-width: 800px) {
+    
+    h1 {
+        font-size: 16px;
+    }
+    
+    p, a {
+        font-size: 10px;
+    }
+
+}
+
+
+
+/* ---------- Navegação ---------- */
+nav {
+    padding: 2vh 10vw ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5vw;
+}
+
+#logo {
+    width: 5vw;
+    min-width: 100px;
+}
+
+#menu {
+    display: flex;
+    gap: 3vw;
+}
+
+#menu a 
+{
+    transition: 
+        color 0.4s ease-in-out,
+        background-color 0.4s ease-in-out,
+        transform 0.4s ease-in-out,
+        border-radius 0.4s ease-in-out;
+
+    border-radius: 5px;
+    padding: 1em;
+   
+}
+
+#menu a:hover,
+#menu .fix {
+    color: #f7f5ed;
+    background-color: #3E6B3A;
+    border-radius: 30px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+}
+
+#menu a:hover {
+    transform: scale(1.25);
+}
+
+
+/* ---------- Footer ---------- */
+
+.rodape 
+{
+  position: relative;
+  background-color: #3E6B3A;
+  color: #f7f5ed ;
+  padding: 7vh 10vw 10px;
+}
+
+.rodape-conteudo 
+{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+
+  gap: 32px;
+}
+
+.rodape-titulo 
+{
+  font-size: 1.5rem;
+  color: #f7f5ed;
+  margin-bottom: 6px;
+}
+
+.rodape-subtitulo
+{
+  color: #f7f5ed;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 0.85rem;
+  margin-bottom: 8px;
+}
+.equipe
+{
+    background-color: #7a8f4e;
+}
+.equipe li 
+{
+  padding: 2px 0;
+}
+
+.contato 
+{
+    
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+
+}
+
+.btn-footer
+{
+    transition: 
+        color 0.4s ease-in-out,
+        background-color 0.4s ease-in-out,
+        transform 0.4s ease-in-out,
+        border-radius 0.4s ease-in-out;
+    
+    padding: 5px;
+    color: #f7f5ed;
+    border-style: solid;
+    border-radius: 50px;
+    border-color: #f7f5ed;
+    border-width: 1px;
+    text-align: center;
+    
+}
+.btn-footer:hover
+{
+    background-color: #7a8f4e;
+    transform: scale(1.15);
+}
+
+hr {
+    margin-top: 10px;
+}
+.direitos p {
+    text-align: center;
+}

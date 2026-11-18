@@ -5,15 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trilhas do Cacau</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
     <header>
         <div id="inicio"></div>
-        <nav>
-            <img src="img/logo.jpeg" alt="logo" id="logo">
+            <nav>
+            <a href="index.html"><img src="img/logo.jpeg" alt="logo" id="logo"></a>
             <div id="menu">
-                <a href="#inicio">Início</a>
+                <a href="index.html" class="fix">Início</a>
                 <a href="">Catálogo de Fazendas</a>
                 <a href="">Cultura & História</a>
                 <a href="">Acervo Multimídia</a>
@@ -24,20 +25,54 @@
 
     <main>
         <section id="hero">
-            <div>
-                <h1>Mais que um destino, <br> Uma experiência <br> na Bahia</h1>
-                <p>Conheça a cultura do cacau, a força da cabruca e as pessoas que fazem essa história acontecer</p>
+            <div id="roc"><!--row ou column-->
+                <div>
+                    <h1>Mais que um destino, <br> Uma experiência <br> na Bahia</h1>
+                    <p>Conheça a cultura do cacau, a força da cabruca e as pessoas que fazem essa história acontecer</p>
+                    
+                </div>
                 <a href="" class="btn">Explorar fazendas</a>
             </div>
         </section>
-        <section id="roteiro">
-            <h1>Nossos Roteiros</h1>
-            <p>Vivências autênticas na Bahia</p>
+
+        <section id="mapa">
+            
+
         </section>
     </main>
 
-    <footer>
-        <nav></nav>
+    <footer class="rodape" data-testid="footer">
+        <div class="container rodape-conteudo">
+            <div class="column gap">
+                <div>
+                    <p class="rodape-titulo">Trilhas<strong> do Cacau</strong></p>
+                    <p>IFBA Campus Ilhéus · 2026</p>
+                </div>
+
+                <a href="#inicio" class="btn-footer">Voltar ao topo ↑</a>
+            </div>
+            <div class="contato">
+                <a href="" class="btn-footer">Whatsapp</a>
+                <a href="" class="btn-footer">Instragram</a>
+            </div>
+
+            <div class="equipe">
+                <p class="rodape-subtitulo">Equipe</p>
+                <ul  data-testid="footer-team">
+                    <li>A.Elisa</li>
+                    <li>Angelina dos Santos Cardoso</li>
+                    <li>Bernardo R.S</li>
+                    <li>João Pedro</li>
+                    <li>Lara Honda</li>
+                    <li>Rafael E.S.L</li>
+                </ul>
+            </div>
+        </div>
+      
+        <hr>
+        <div class="direitos">
+            <p>© 2026 Trilhas do Cacau. Todos os direitos reservados.</p>
+        </div>
     </footer>
 </body>
 </html>

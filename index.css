@@ -1,0 +1,114 @@
+#hero {
+    display: flex;
+    align-items: center;
+    color: #f7f5ed;
+    background-image: url("img/hero.png");
+    background-size: cover;
+    background-position: center 60%;
+    aspect-ratio: auto 2048 / 768;
+    padding: 0 10vw;
+
+}
+#hero img {
+    width: 100vw;
+}
+#hero div {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2vh;
+  
+}
+#hero h1 {
+    font-size: 3em;
+}
+#hero p {
+    font-size: 1.5em;
+}
+.btn {
+    display: inline-flex;
+    background-color: #3E6B3A75;
+    padding: 15px 40px;
+    width: 80%;
+    color: #f7f5ed;
+
+    justify-content: center;
+    align-items: center;
+
+    border-style: solid;
+    border-radius: 100px;
+    border-width: 1px;
+    border-color: #f7f5ed;
+    transition:  color 0.4s ease-in-out,
+        background-color 0.4s ease-in-out,
+        transform 0.4s ease-in-out,
+        border-radius 0.4s ease-in-out;
+
+}
+.btn:hover
+{
+    transform: scale(1.05);
+}
+#roc {
+    display: flex;
+    flex-direction: column;
+}
+#roc div{
+    flex-direction: column;
+    padding: 0px;
+}
+#roc div,
+#roc a {
+    width: 38vw;
+}
+#roteiro {
+    margin-top: 5vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2vh;
+}
+
+
+
+@media (max-width: 1920px) and (min-width: 800px) {
+    #hero h1,
+    h1 {
+        font-size: 26px;
+    }
+    #hero p,
+    p, a {
+        font-size: 12px;
+    }
+    
+}
+
+@media (max-width: 800px) {
+        #hero h1
+     {
+        font-size: 16px;
+    }
+    #hero p {
+        font-size: 10px;
+    }
+    #hero
+    {
+        align-items: center;
+        justify-content: flex-start;
+    }
+    #roc
+    {
+        flex-direction: row;
+        align-items: center;
+    }
+    #roc a
+    {
+        margin-top: 5vh;
+    }
+     nav{
+        flex-direction: column;
+        gap: 5px;
+    }
+
+
+}
